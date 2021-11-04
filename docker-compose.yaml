@@ -1,0 +1,7 @@
+version: '3'
+services:
+    kafka-example:
+        build: .
+        environment:
+            KAFKA_BROKER_LIST: kfall-1.dev1.services.lmc:9092
+            KAFKA_TOPIC: development-local-experimental-v1
